@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>china</title>
+    <link rel="stylesheet" href="style/style.css" href="style/bootstrap.css">
+    <script src="#"></script>
+
+</style>
+ 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container row menu">
+                <a href="" class="menu__logo"><img src="img/4g travel-logos_black.png" alt=""></a>
+                <ul class="menu__list">
+                    <li><a href="index.html" class="menu__link">home</a></li>
+                    <li><a href="photos.html" class="menu__link">photos</a></li>
+                    <li><a href="posts.html" class="menu__link">posts</a></li>
+                    <li><a href="login.html" class="menu__link">login</a></li>
+                    <li><a href="contacts.html" class="menu__link">contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+   
+    </header>
+ <img class="mySlides" src="img/r1.jpg" style="width:100%">
+  <img class="mySlides" src="img/r2.jpg" style="width:100%">
+  <img class="mySlides" src="img/r3.jpg" style="width:100%">
+  <img class="mySlides" src="img/r4.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+ <main>
+        <div class="container">
+           
+            <div class="row content">
+                <section class="content__info">
+                    <h1 class="content__title">CHINA TRAVEL GUIDE</h1>
+                    <p class="content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <p class="content__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum. </p>
+                    <p class="content__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                        architecto beatae vitae dicta sunt explicabo. </p>
+                   
+                </section>
+                
+            </div>
+        </div>
+
+    </main>
+
+
+</body>
+<footer>
+<div class="container pb-cmnt-container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-info">
+                <div class="panel-body">
+                    <textarea placeholder="Write your comment here!" class="pb-cmnt-textarea"></textarea>
+                    <form class="form-inline">
+                       
+                        <button class="btn btn-primary pull-right" type="button">Share</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .pb-cmnt-container {
+        font-family: Lato;
+        margin-top: 100px;
+    }
+
+    .pb-cmnt-textarea {
+     border: 5px solid lightblue;
+        resize: none;
+        padding: 20px;
+        height: 130px;
+        width: 500px;
+       
+    }
+</style>
+</footer>
+</html>

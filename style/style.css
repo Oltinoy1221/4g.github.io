@@ -1,0 +1,287 @@
+
+@import "fonts.css" ;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* background:#0067dd; */
+    font-family: "MR";
+    font-weight: 400;
+    box-sizing: border-box;/* otkluchayet dobavleniye razmera padding i border k fiksirovannomu razmeru tega */
+    
+}
+
+.container{
+    max-width: 1110px;
+    width: 100%;
+    margin: auto;
+   
+   
+   
+}
+
+.row {
+    display: flex;
+    
+}
+.btn {
+    background: #0067dd;
+    max-width: 200px;
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 11px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: #dae1e9;
+    font-size: 16px;
+    
+}
+
+.btn:hover {
+    background: #05219e;
+}
+
+.menu {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__list {
+    list-style: none;
+    display: flex;
+
+}
+ .menu__link {
+     text-decoration: none;
+     color: white;
+     margin-left: 32px;
+     font-size: 16px;
+     transition: 0.5s;
+ }
+ .menu__link:hover {
+     color:#0b0c0e;
+     
+ }
+
+ .menu__logo {
+     /* text-decoration: none; */
+     display: flex;
+    
+ }
+
+ .menu__logo img {
+     margin-right: 22px;
+     height: 95px;
+     width: 95px;
+
+ }
+
+ nav{
+     padding-top: 7px;
+     padding-bottom: 7px;
+     box-shadow: 0 3px 7px rgba(58, 31, 12, 0.35);
+     position: relative;
+     /* background-color: #2093c3; */
+     background-color: #0067dd;
+ }
+ .header-img {
+     width: 100%;
+     height: 500px;
+     object-fit: cover;
+
+ }
+
+ .product {
+     display: flex;
+     flex-direction: column;
+     max-width: 255px;
+     width: 100%;
+     height: 350px;
+     box-shadow: 0 0 15px #7f8081;
+     align-items: center;
+     padding: 0 21px 26px 34px;
+     text-align: center;
+     background: #f8f8f8;
+
+ }
+
+ .products {
+     justify-content: space-between;
+     margin-top: 50px;
+     margin-bottom: 103px;
+    
+     
+ }
+ .product__title {
+     font-family: "MB";
+     font-size: 18px;
+     color: #0067dd;
+     max-width: 167px;
+     width: 100%;
+     flex-grow: 1;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     line-height: 27px;
+     background: #f8f8f8;
+
+ }
+
+ .product__img {
+     height: 190px;
+     max-width: 100px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+ }
+ 
+ .product__img::after {
+     content: '';
+ }
+
+ .content__info {
+     max-width: 730px;
+     width: 100%;
+ }
+ /* .sidebar {
+     max-width: 255px;
+     width: 100%;
+ } */
+.content {
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.content__title {
+   
+    font-size: 30px;
+   font-family: "MB";
+    color: #3d3c3c;
+    margin-bottom: 52px;
+    margin-top: 50px;
+    
+}
+ .content__text {
+     font-size: 18px;
+     color: #292828;
+     line-height: 27px;
+     margin-bottom: 27px;
+ }
+ .content__text:last-of-type {
+     margin-bottom: 51px;
+
+ }
+ .news {
+     display: flex;
+     margin-bottom: 15px;
+
+ }
+ .news__img {
+     width: 65px;
+     height: 65px;
+     object-fit: cover;
+     margin-right: 30px;
+ }
+
+}
+.card {
+    width: 100%;
+    border: none;
+    border-radius: 8px
+}
+
+.height-100 {
+    height: 100vh
+}
+
+.form-control {
+    resize: none;
+    height: 130px;
+    border: 2px solid #eee
+
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 2px solid red
+}
+
+
+
+ /* .news__link {
+     font-size: 14px;
+     color: #dd4400;
+ } */
+
+ footer {
+     
+     padding-top: 69px;
+     padding-bottom: 65px;
+     background: #f8f8f8;
+
+ }
+ .footer {
+     justify-content: space-between;
+ color: #0067dd;
+ background: #f8f8f8;
+    } 
+ .footer h3 {
+     font-size: 30px;
+     color: #0067dd;
+     background: #f8f8f8;
+ }
+
+ .footer a {
+     text-decoration: none;
+     color: #0067dd;
+     display: block;
+     background: #f8f8f8;
+
+ }
+ .footer__left a {
+
+     font-size: 45px;
+     margin-top: 25px;
+     background: #f8f8f8;
+ }
+
+ .footer__left p{
+     font-size: 18px;
+     margin-top: 7px;
+     background: #f8f8f8;
+ }
+
+ .footer__right p {
+     font-size: 20px;
+     margin-top: 21px;
+     text-align: left;
+     background: #f8f8f8;
+     
+ }
+ .footer__right a {
+     font-size: 20px;
+     margin-top: 25px;
+     background: #f8f8f8;
+
+
+ }
+
+ .text {
+     font-size: 65px;
+     text-align: center;
+     font-weight: bold;
+     color: rgba(110, 183, 252, 0.952);
+ }
+ fieldset {
+    margin: auto;
+   
+    width: 90px;
+   
+    border: 5px solid paleturquoise; 
+    
+}
